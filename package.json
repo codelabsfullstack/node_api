@@ -1,0 +1,17 @@
+{
+  "name": "ntask-api",
+  "version": "1.0.0",
+  "description": "Task list API",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node index.js"
+  },
+  "author": "Victor Peña",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "express": "^4.16.3"
+  }
+}
