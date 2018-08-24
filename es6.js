@@ -10,5 +10,5 @@ class People {
 
 var p = new People;
 
-console.log(p.getName())
+console.log(p.getName());
 
