@@ -8,7 +8,7 @@ module.exports = app => {
 	if (!db) {
 		const config = app.libs.config;
 		const sequelize = new Sequelize(config.database, config.username, config.password, config.params);
-
+		
 		db = {
 			sequelize,
 			Sequelize,
@@ -21,7 +21,6 @@ module.exports = app => {
 			const model = sequelize.import(modelDir);
 			db.models[model.name] = model;
 		});
-		console.log(db.models)
 
 		Object.keys(db.models).forEach(key => {
 			db.models[key].associate(db.models);
